@@ -528,6 +528,9 @@ td {
     h1 {
         margin-bottom: 0;
     }
+    main {
+        width: 100%;
+    }
     .navbar, header {
         width: 100%;
     }
