@@ -4,230 +4,282 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,600&display=swap"
+      rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <title>kedar's portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Kedar Basutkar - Full Stack Developer</title>
   </head>
   <body>
-    <header>
-      <table>
-        <tr>
-          <td class="color1"></td>
-          <td class="color2"></td>
-          <td class="color3"></td>
-          <td class="color4"></td>
-        </tr>
-      </table>
-      <div class="container-header">
-        <h1>
-          <a href="https://kedarbasutkar.me/">kedar basutkar</a>
+    <div
+      class="mx-auto flex h-screen max-w-5xl flex-col p-4 transition-all dark:text-gray-200"
+    >
+      <!-- Hero Section -->
+      <div
+        class="relative w-full rounded-xl bg-sky-300/20 text-center shadow-md shadow-sky-100 dark:shadow-none"
+      >
+        <!-- Color Bar -->
+        <div class="mb-2 grid h-2 grid-cols-4">
+          <div class="rounded-tl-lg bg-hero-red"></div>
+          <div class="bg-hero-orange"></div>
+          <div class="bg-hero-blue"></div>
+          <div class="rounded-tr-lg bg-hero-gray"></div>
+        </div>
+        <!--  -->
+        <h1 class="transform text-3xl font-bold transition-all hover:scale-105">
+          <a href="https://kedarbasutkar.me/">Kedar Basutkar</a>
         </h1>
-        <nav class="navbar">
-          <ul class="nav-list">
-            <li class="nav-li">
-              <a class="nav-link current-page" href="https://kedarbasutkar.me/">home</a>
+        <h3 class="mb-2 text-xl">Full Stack Developer</h3>
+        <i
+          class="fa-regular fa-sun absolute right-4 bottom-1/3 cursor-pointer text-xl hover:animate-wiggle md:right-8 md:text-2xl"
+          id="dark-mode-btn"
+        ></i>
+      </div>
+      <!--  -->
+
+      <!-- Grid Container -->
+      <div class="mt-4 grid flex-1 grid-cols-2 gap-4 pb-4 md:grid-cols-4">
+        <!-- About Card -->
+        <div
+          class="card bg-purple-300/20 shadow-md shadow-purple-100 dark:shadow-none"
+        >
+          <h2 class="mb-2">ℹ️ About</h2>
+          <p>
+            Hey! I'm Kedar, a full stack developer from India. I am an equal
+            parts artist, engineer, and builder. My job is to get people from
+            point A to B in the clearest route possible.
+          </p>
+        </div>
+        <!--  -->
+
+        <!-- Photo Card -->
+        <div>
+          <img
+            src="./assets/photo.JPG"
+            alt="display picture"
+            class="h-full transform rounded-xl object-cover transition-all duration-200 ease-in-out hover:scale-95"
+          />
+        </div>
+        <!--  -->
+
+        <!-- My Work Card -->
+        <div
+          class="card bg-emerald-300/20 shadow-md shadow-emerald-100 dark:shadow-none md:row-span-2"
+        >
+          <div class="group mb-2 flex items-center justify-between">
+            <h2 class="transition-all group-hover:scale-110">
+              <a href="https://projects.kedarbasutkar.me/">🛠️ My Work</a>
+            </h2>
+            <a href="#">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square transform cursor-pointer p-2 transition-all group-hover:-translate-x-2 group-hover:scale-110"
+              ></i>
+            </a>
+          </div>
+          <p class="md:hidden">
+            Check out my apps that are fun and utilitarian.
+          </p>
+          <ul class="hidden space-y-2 text-lg md:block">
+            <li>
+              <a href="https://get-interview-ready.vercel.app/" target="_blank"
+                >Get Interview Ready</a
+              >
             </li>
-            <li class="nav-li">
-              <a class="nav-link" href="https://projects.kedarbasutkar.me/">projects</a>
+            <!-- <li>Shark Encrypt</li> -->
+            <li>
+              <a href="https://devcase.vercel.app/" target="_blank">devCase</a>
             </li>
-            <li class="nav-li">
+            <li>
+              <a href="https://ev-trip-planner.vercel.app/" target="_blank"
+                >EV Trip Planner</a
+              >
+            </li>
+
+            <li>
               <a
-                class="nav-link"
-                href="https://blog.kedarbasutkar.me/"
+                href="https://play.google.com/store/apps/details?id=com.kedaroo.pave"
                 target="_blank"
-                >blogs</a
+                >PAViC</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://project-management-app-psi.vercel.app/"
+                target="_blank"
+                >Dojo Planner</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://kedar-finance-tracker.netlify.app/"
+                target="_blank"
+                >Finance Tracker</a
               >
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <div class="container">
-        <div class="main-info">
-          <div>
-            <p class="name first-name">kedar</p>
-            <p class="name last-name">basutkar</p>
-            <p class="role">FRONTEND WEB DEVELOPER</p>
-            <p class="message">
-              hey there! welcome to my portfolio! do check out every nook &
-              corner!
-            </p>
-          </div>
         </div>
-        <img src="./assets/hero.svg" alt="" class="img-hero" />
-      </div>
+        <!--  -->
 
-      <section class="section-tech">
-        <div class="container-tech">
-          <div class="tech-info">
-            <div>
-              <div class="logo logo-tech">
-                <i class="fa-solid fa-code"></i>
-              </div>
-              <h2>technologies</h2>
-              <p>i'm familiar with these technologies</p>
-            </div>
-          </div>
-          <div class="tech-logos">
-            <div class="grid-item">
-              <i class="fa-brands fa-html5 tech-icon red"></i>
-              <p>html</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-brands fa-css3-alt tech-icon orange"></i>
-              <p>css</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-brands fa-js tech-icon yellow"></i>
-              <p>javascript</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-brands fa-react tech-icon green"></i>
-              <p>react</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-solid fa-database tech-icon indigo"></i>
-              <p>sql</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-brands fa-node tech-icon pink"></i>
-              <p>node</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-brands fa-react tech-icon blue"></i>
-              <p>react native</p>
-            </div>
-            <div class="grid-item">
-              <i class="fa-brands fa-python tech-icon cyan"></i>
-              <p>python</p>
-            </div>
-
-            <div class="grid-item">
-              <i class="fa-brands fa-git-alt tech-icon rose"></i>
-              <p>git</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-projects">
-        <div class="container-projects">
-          <div>
-            <img src="./assets/hero-projects.svg" class="projects-hero" />
-          </div>
-          <div class="projects-info">
-            <div>
-              <div class="logo logo-projects">
-                <i class="fa-solid fa-screwdriver-wrench logo-projects"></i>
-              </div>
-              <h2>projects</h2>
-              <p>
-                i like to showcase my work; you can see my projects hosted
-                online
-              </p>
-              <a href="https://projects.kedarbasutkar.me/" class="link-primary">see projects</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-projects">
-        <div class="container-projects">
-          <div class="projects-info">
-            <div>
-              <div class="logo logo-blogs">
-                <i class="fa-solid fa-pen-fancy logo-blogs"></i>
-              </div>
-              <h2>blogs</h2>
-              <p>
-                i am also working on technical blogs. i like to document my
-                journey of learning
-              </p>
-              <a
-                href="https://blog.kedarbasutkar.me/"
-                target="_blank"
-                class="link-primary"
-                >see blogs</a
-              >
-            </div>
-          </div>
-          <div>
-            <img src="./assets/hero-blogs.svg" class="projects-hero" />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container-footer">
-        <p class="text-center">stay connected!</p>
-        <ul class="socials-list">
-          <li class="socials-list-item">
-            <a href="https://twitter.com/KedarBasutkar" target="_blank">
-              <i class="fa-brands fa-twitter social-icon"></i>
-            </a>
-          </li>
-          <li class="socials-list-item">
-            <a href="https://github.com/kedaroo" target="_blank">
-              <i class="fa-brands fa-github social-icon"></i>
-            </a>
-          </li>
-          <li class="socials-list-item">
+        <!-- Experience Card -->
+        <div
+          class="card bg-amber-300/20 shadow-md shadow-amber-100 dark:shadow-none"
+        >
+          <h2 class="mb-2">👔 Experience</h2>
+          <h4 class="transform font-semibold transition-all hover:scale-105">
             <a
-              href="https://www.linkedin.com/in/kedar-basutkar/"
+              href="https://blog.kedarbasutkar.me/my-first-internship-experience-at-eaton"
               target="_blank"
-            >
-              <i class="fa-brands fa-linkedin-in social-icon"></i>
+              class="underline"
+              >Eaton Aerospace
             </a>
-          </li>
-        </ul>
-        <div class="footer-list">
-          <p class="footer-name">
-            <a href="index.html">kedar basutkar</a>
-          </p>
-          <!-- <ul class="footer-nav-list">
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-nav-link">home</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-nav-link">projects</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-nav-link">blogs</a>
-                    </li>
-                </ul> -->
-          <p class="copyright-text">
-            © 2022 kedar basutkar. all rights reserved
+          </h4>
+          <h5 class="text-lg">Intern</h5>
+          <p class="text-sm">Jun 2022 - Aug 2022</p>
+        </div>
+        <!--  -->
+
+        <!-- Achievements Card -->
+        <div
+          class="card relative col-span-2 bg-cyan-300/20 shadow-md shadow-cyan-100 dark:shadow-none md:col-span-1"
+        >
+          <div class="mb-2 flex items-center justify-between">
+            <h2 class="">🏆 Achievements</h2>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <div class="div">
+              <h4
+                class="transform font-semibold transition-all hover:scale-105"
+              >
+                <a
+                  href="https://crossknothacks.devfolio.co/overview"
+                  target="_blank"
+                  >🏅CrossKnotHacks
+                </a>
+              </h4>
+              <h5 class="text-md">Top 8th Winning Team</h5>
+            </div>
+
+            <div class="">
+              <h4
+                class="transform font-semibold transition-all hover:scale-105"
+              >
+                <a href="https://srijan.org.in/index" target="_blank"
+                  >🥇DIPEX
+                </a>
+              </h4>
+              <h5 class="text-md">Best Project - Winner</h5>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- Skills Card -->
+        <div
+          class="card relative col-span-2 bg-indigo-300/30 shadow-md shadow-indigo-100 dark:shadow-none md:col-span-1"
+        >
+          <div class="mb-2 flex items-center justify-between">
+            <h2 class="">🤹‍♂️ Skills</h2>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5">
+            <div class="skill-pill">React</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">Node</div>
+            <div class="skill-pill">Express</div>
+            <div class="skill-pill">React Native</div>
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">Git & GitHub</div>
+            <div class="skill-pill">SQL</div>
+            <div class="skill-pill">Tailwind</div>
+            <div class="skill-pill">MongoDB</div>
+            <div class="skill-pill">Firebase</div>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- My Blog Card -->
+        <div
+          class="card bg-stone-300/30 shadow-md shadow-stone-100 dark:shadow-none"
+        >
+          <div class="group mb-2 flex items-center justify-between">
+            <h2 class="transition-all group-hover:scale-110">
+              <a href="https://blog.kedarbasutkar.me/">✍️ My Blog</a>
+            </h2>
+            <a href="https://blog.kedarbasutkar.me/" target="_blank">
+              <i
+                class="fa-solid fa-arrow-up-right-from-square transform cursor-pointer p-2 transition-all group-hover:-translate-x-2 group-hover:scale-110"
+              ></i>
+            </a>
+          </div>
+          <p>
+            Catch up with my latest posts, where I write about my projects and
+            other technical topics!
           </p>
         </div>
-        <table>
-          <tr>
-            <td class="color1"></td>
-            <td class="color2"></td>
-            <td class="color3"></td>
-            <td class="color4"></td>
-          </tr>
-        </table>
+        <!--  -->
+
+        <!-- Say Hello Card -->
+        <div
+          class="flex flex-col rounded-lg bg-rose-300/30 shadow-md shadow-rose-100 dark:shadow-none md:col-span-4 md:max-h-32"
+        >
+          <div class="mt-3 ml-3 flex flex-1 flex-col justify-between">
+            <div class="mb-2 flex items-center space-x-2 md:justify-center">
+              <h2>Say Hello</h2>
+              <div class="animate-wiggle text-xl">👋</div>
+            </div>
+
+            <!-- Social Icons -->
+            <div
+              class="mr-3 mb-2 flex justify-end space-x-3 md:justify-center md:space-x-16"
+            >
+              <a href="https://twitter.com/KedarBasutkar" target="_blank">
+                <i
+                  class="fa-brands fa-twitter social-link rounded-full hover:bg-twitter-blue/10 hover:text-twitter-blue"
+                ></i>
+              </a>
+              <a href="https://github.com/kedaroo" target="_blank">
+                <i
+                  class="fa-brands fa-github social-link rounded-full hover:bg-github-gray/10 hover:text-github-gray"
+                ></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kedar-basutkar/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin social-link rounded-full hover:bg-linkedin-blue/10 hover:text-linkedin-blue"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <!-- Color Bar -->
+          <div class="hidden h-2 grid-cols-4 md:grid">
+            <div class="rounded-bl-lg bg-hero-red"></div>
+            <div class="bg-hero-orange"></div>
+            <div class="bg-hero-blue"></div>
+            <div class="rounded-br-lg bg-hero-gray"></div>
+          </div>
+          <!--  -->
+          <!--  -->
+        </div>
+        <!--  -->
       </div>
-    </footer>
+      <!--  -->
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
